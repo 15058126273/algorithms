@@ -1,4 +1,5 @@
 /target
+/out
 /bin
 /build
 /.settings
@@ -10,3 +11,4 @@
 *.class
 .checkstyle
 /.idea
+
