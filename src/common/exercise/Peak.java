@@ -1,9 +1,21 @@
-package common.math.array;
+package common.exercise;
 
 import java.util.Arrays;
 
 /**
- * 求数组中的峰值
+ * @description: 取峰值
+ * 给出一个整数数组（size 为 n），其具有以下特点：
+    1、相邻位置的数字是不同的
+    2、A[0] < A[1] 并且 A[n - 2] > A[n - 1]
+    假定P是峰值的位置则满足 A[P] > A[P-1] 且 A[P] > A[P+1]，写一个函数返回数组中所有峰值的位置。
+    格式：
+    输入行输入一个整数数组，输出行输出所有数组中的峰值的位置。
+    样例输入
+    [ 1，2，1，3，4，5，7，6 ]
+    样例输出
+    1，6
+ * @author: yjy
+ * @datetime: 2017/12/15 14:45
  */
 public class Peak {
 
@@ -25,7 +37,7 @@ public class Peak {
      * @param arr 给定数组
      * @return 高峰下标数组
      */
-    private static int[] findBigPeak(int[] arr) {
+    public static int[] findBigPeak(int[] arr) {
         int[] index;
         int len = arr.length;
         if (len < 3) {
@@ -48,7 +60,7 @@ public class Peak {
      * @param arr 给定数组
      * @return 低峰下标数组
      */
-    private static int[] findSmallPeak(int[] arr) {
+    public static int[] findSmallPeak(int[] arr) {
         int[] index;
         int len = arr.length;
         if (len < 3) {
@@ -71,7 +83,7 @@ public class Peak {
      * @param arr 给定数组
      * @return 所有峰值下标数组
      */
-    private static int[] findAllPeak(int[] arr) {
+    public static int[] findAllPeak(int[] arr) {
         int[] index;
         int len = arr.length;
         if (len < 3) {
