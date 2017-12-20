@@ -1,7 +1,7 @@
 package common.exercise;
 
 /**
- * @description:
+ * @description: 字符串转整数
  * 实现atoi这个函数，将一个字符串转换为整数。如果没有合法的整数，返回0。
  * 若整数超出了32位整数的范围，如果是正整数则返回 INT_MAX（2147483647），或者如果是负整数则返回 INT_MIN（-2147483648）。
     格式：
