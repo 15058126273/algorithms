@@ -31,7 +31,6 @@ public class Combination {
      * 取所有组合集合
      * @param arr 给定正整数集合
      * @param target 目标正整数
-     * @return 所有组合集合
      */
     public static void findCombination(int[] arr, int target) {
         // 数组去重 & 将大于目标值的元素移除
