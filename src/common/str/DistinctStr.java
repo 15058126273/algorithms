@@ -5,7 +5,7 @@ package common.str;
  * @author yjy
  * @date 2017年4月5日下午5:45:34
  */
-public class DropRepeat {
+public class DistinctStr {
 
 	/**
 	 * 字符串去重
