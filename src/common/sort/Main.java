@@ -10,7 +10,7 @@ public class Main {
 
     public static void main(String[] args) {
         // just do it...
-        int size = 100000;
+        int size = 50000000;
         Double[] doubles = generate(size);
 
         TimeClocker clocker = new TimeClocker();
@@ -21,8 +21,14 @@ public class Main {
 //        // 插入排序
 //        Insertion.sort(doubles);
 
-        // 希尔排序
-        Shell.sort(doubles);
+//        // 希尔排序
+//        Shell.sort(doubles);
+
+//        // 并归排序 自顶向下
+//        MergeU2D.sort(doubles);
+
+        // 并归排序 自底向上
+        MergeD2U.sort(doubles);
 
         clocker.stop("排序");
 
