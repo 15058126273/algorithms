@@ -1,5 +1,7 @@
 package common.sort;
 
+import common.util.TimeClocker;
+
 /**
  * description
  *
@@ -27,8 +29,14 @@ public class Main {
 //        // 并归排序 自顶向下
 //        MergeU2D.sort(doubles);
 
-        // 并归排序 自底向上
-        MergeD2U.sort(doubles);
+//        // 并归排序 自底向上
+//        MergeD2U.sort(doubles);
+
+//        // 快速排序
+//        Quick.sort(doubles);
+
+        // 快速排序 三向切分
+        QuickThree.sort(doubles);
 
         clocker.stop("排序");
 
