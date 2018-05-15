@@ -35,8 +35,11 @@ public class Main {
 //        // 快速排序
 //        Quick.sort(doubles);
 
-        // 快速排序 三向切分
-        QuickThree.sort(doubles);
+//        // 快速排序 三向切分
+//        QuickThree.sort(doubles);
+
+        // 堆排序
+        Heap.sort(doubles);
 
         clocker.stop("排序");
 
